@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestBefore - Food Expiration Reminder App</title>
+    <!-- Include Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Set custom Tailwind config, using Inter font and color palette relevant to food/ecology -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#059669', // Primary color: Green (Emerald/Teal) - represents freshness and eco-friendliness
+                        'secondary': '#f59e0b', // Secondary color: Orange (Amber) - represents alert/reminder
+                        'background': '#f0fdf4', // Background color: Light pale green
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Use Inter font
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Include Inter font (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4; /* Light green background */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar (Header) - Keep only the App Name -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-start items-center h-16">
+                <!-- App Name - Text Only -->
+                <a href="#" class="flex items-center text-2xl font-bold text-primary hover:text-green-700 transition duration-300">
+                    BestBefore
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section - Core Introduction and Direct Download Link -->
+        <section id="hero" class="py-16 sm:py-24 lg:py-32 bg-background">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Content centered -->
+                <div class="flex justify-center">
+                    <!-- Introduction text content: Centered, wider span -->
+                    <div class="max-w-3xl text-center">
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                            Stop Wasting, <span class="text-primary">Master Food Expiration</span>
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-10 mx-auto">
+                            <strong>BestBefore</strong> is your personal food butler. Simply scan or input items, and it accurately reminds you before food expires, helping you reduce waste, save money, and make kitchen management easy and efficient!<br>
+                            <strong>Download the APK now and start your zero-waste life.</strong>
+                        </p>
+                        <!-- Primary CTA Button: Direct link to APK file -->
+                        <div class="flex justify-center">
+                            <a href="assets/app-release.apk" download="app-release.apk" class="inline-flex items-center justify-center px-12 py-4 border border-transparent text-xl font-bold rounded-xl text-white bg-secondary hover:bg-yellow-600 transition duration-300 shadow-2xl transform hover:scale-105" aria-label="Download BestBefore APK for Android">
+                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                Download BestBefore APK (Android)
+                            </a>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500 max-w-xl mx-auto">
+                            <strong>Note:</strong> Installing an APK file directly requires enabling installation from unknown sources in your device settings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Download Section (Simplified, secondary download button) -->
+        <section id="download" class="py-12 bg-primary">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-2xl font-bold text-white mb-4">
+                    Just One Step to Say Goodbye to Expired Food
+                </h2>
+                <div class="flex justify-center">
+                    <a href="assets/app-release.apk" download="app-release.apk" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-lg font-bold rounded-xl text-white bg-secondary hover:bg-yellow-600 transition duration-300 shadow-xl transform hover:scale-105" aria-label="Download BestBefore APK now">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download APK Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">
+                &copy; 2025 BestBefore. All rights reserved. | Live Green, Start with Zero Waste.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

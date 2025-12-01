@@ -1,0 +1,19 @@
+name: Create release and upload APK on tag
+
+on:
+  push:
+    tags: [ 'v*' ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create Release and Upload APK
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.ref }}
+          files: assets/app-release.apk
